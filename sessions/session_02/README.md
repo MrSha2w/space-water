@@ -9,24 +9,50 @@ Teaching repository for running and presenting SWAT+ observation-vs-simulation c
 - `data/`: input files
 - `outputs/`: generated figures and aligned CSV files
 
-## Run
 
-From the repository root:
+============
+Installation
+============
 
-```bash
-python src/run_session2.py
-```
+To execute Jupyter Notebook/Lab, we need the Miniconda environment.
 
-## JupyterLab
+1. Miniconda Python:
+--------------------
 
-In a notebook started from the repository root:
+- If you don't already have conda installed, please download Miniconda for your operating system from https://conda.io/en/latest/miniconda.html (choose the latest version for your operating system, 64-bit). You should not need elevated rights to install this.
+- Run the installer and select "only my user" when prompted. This will allow you to work with your python installation directly.
 
-```python
-import sys
-sys.path.append("src")
 
-from run_session2 import CONFIG, STATIONS, JOBS
-from swat_core import run_course
+2. Set Environment and install libraries:
+-----------------------------------------
+- After installation, go to the START menu and select "Miniconda Prompt" to open a DOS box.
+- Let's update conda base first.
 
-results = run_course(CONFIG, STATIONS[:2], JOBS)
-```
+.. code-block:: bash
+
+   conda update -n base -c defaults conda
+
+and hit ENTER.
+
+- Using the `cd <https://www.computerhope.com/issues/chusedos.htm>`_ command in the Miniconda DOS box, navigate to the location where you have `environment.yml` the file and type: 
+
+.. code-block:: bash
+
+   conda env create -f environment.yml
+
+and hit ENTER.
+
+After your virtual environment setup is complete, change the environment to `swatp_pst_wf`:  
+
+.. code-block:: bash
+
+   conda activate swatp_session2
+
+- Launch jupyter lab 
+
+.. code-block:: bash
+
+   jupyter notebook
+
+
+A browser window with a Jupyter notebook instance should open. Yay!
