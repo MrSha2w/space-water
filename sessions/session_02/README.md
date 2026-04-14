@@ -4,8 +4,7 @@ Session 2 teaching repository for running, evaluating, and presenting SWAT+ obse
 
 ## Repository structure
 
-- `src/swat_core.py` contains the reusable workflow logic for reading SWAT+ outputs, loading observations, aligning time series, computing evaluation metrics, and generating diagnostic plots.
-- `sessions/session_02/config.py` contains the Session 2 configuration, including paths, stations, jobs, and plotting settings.
+- `src/swat_utils.py` contains the reusable workflow logic for reading SWAT+ outputs, loading observations, aligning time series, computing evaluation metrics, and generating diagnostic plots.
 - `sessions/session_02/session_02_demo.ipynb` provides the classroom notebook for testing and demonstrating the Session 2 workflow.
 - `data/` stores input files such as observations and any required local data.
 - `outputs/` stores generated figures and aligned CSV files.
