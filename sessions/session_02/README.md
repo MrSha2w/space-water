@@ -16,7 +16,7 @@ This workflow is intended to run in a dedicated Conda environment.
 ### 1. Install Miniconda
 
 If Conda is not already installed on your computer, download and install Miniconda for your operating system from the official Miniconda website. Use the latest 64-bit version available for your system.
-
+https://conda.io/en/latest/miniconda.html
 During installation, choose the option for your user only unless you specifically need a system-wide installation.
 
 ### 2. Open the Conda terminal
