@@ -1,0 +1,16 @@
+name: swatp_space_water_s02
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - pandas
+  - numpy
+  - matplotlib 
+  - jupyter 
+  - pip
+  - notebook 
+  - scipy 
+  - shapely
+  - rtree
+  - git
+  - geopandas
